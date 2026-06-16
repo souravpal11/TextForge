@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/textforge/static/css/main.1e8574f1.css",
+    "main.js": "/textforge/static/js/main.e05a3c0f.js",
+    "static/js/453.e37ee27f.chunk.js": "/textforge/static/js/453.e37ee27f.chunk.js",
+    "static/media/photo.png": "/textforge/static/media/photo.028190ce1d36357ad3fb.png",
+    "index.html": "/textforge/index.html",
+    "main.1e8574f1.css.map": "/textforge/static/css/main.1e8574f1.css.map",
+    "main.e05a3c0f.js.map": "/textforge/static/js/main.e05a3c0f.js.map",
+    "453.e37ee27f.chunk.js.map": "/textforge/static/js/453.e37ee27f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e8574f1.css",
+    "static/js/main.e05a3c0f.js"
+  ]
+}
