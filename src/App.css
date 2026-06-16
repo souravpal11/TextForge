@@ -1,0 +1,39 @@
+body {
+  transition: all 0.4s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  ) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+textarea {
+  border-radius: 15px !important;
+}
+
+.card,
+.shadow {
+  transition: all 0.3s ease;
+}
+
+.shadow:hover {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  transition: all 0.4s ease;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+  border-color: #8b5cf6;
+}
