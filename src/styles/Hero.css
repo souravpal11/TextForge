@@ -1,0 +1,590 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.hero.light {
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+}
+
+.hero.dark {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.badge-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#7F5AF0,#4F8CFF);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero.light h1 {
+    color: #111827;
+}
+
+.hero.dark h1 {
+    color: white;
+}
+
+.hero-left h1 span {
+
+    background: linear-gradient(90deg,#7F5AF0,#4F8CFF);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-left p {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    max-width: 580px;
+
+    margin-bottom: 35px;
+
+}
+
+.hero.light p {
+
+    color: #475569;
+
+}
+
+.hero.dark p {
+
+    color: #CBD5E1;
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.btn-primary-custom {
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(90deg,#7F5AF0,#4F8CFF);
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.btn-primary-custom:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 18px 40px rgba(127,90,240,.35);
+
+}
+
+.btn-secondary-custom {
+
+    border: 2px solid #7F5AF0;
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    background: transparent;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.hero.light .btn-secondary-custom {
+
+    color: #111827;
+
+}
+
+.hero.dark .btn-secondary-custom {
+
+    color: white;
+
+}
+
+.btn-secondary-custom:hover {
+
+    background: #7F5AF0;
+
+    color: white;
+
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.hero-features {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+
+}
+
+.hero-features div {
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(15px);
+
+    transition: .3s;
+
+}
+
+.hero.light .hero-features div {
+
+    background: rgba(255,255,255,.7);
+
+}
+
+.hero.dark .hero-features div {
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+}
+
+.hero-features div:hover {
+
+    transform: translateY(-4px);
+
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.hero-right {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+/* =========================
+   WINDOW
+========================= */
+
+.hero-window {
+
+    width: 100%;
+
+    max-width: 430px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background: #1E293B;
+
+    box-shadow: 0 35px 70px rgba(0,0,0,.30);
+
+    animation: floating 5s ease-in-out infinite;
+
+}
+
+.window-top {
+
+    display: flex;
+
+    gap: 10px;
+
+    padding: 18px;
+
+    background: #0F172A;
+
+}
+
+.window-top span {
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+
+}
+
+.window-top span:nth-child(1){
+
+background:#EF4444;
+
+}
+
+.window-top span:nth-child(2){
+
+background:#FACC15;
+
+}
+
+.window-top span:nth-child(3){
+
+background:#22C55E;
+
+}
+
+.window-content{
+
+padding:35px;
+
+color:white;
+
+font-size:18px;
+
+line-height:2;
+
+}
+
+.window-content h3{
+
+margin-bottom:20px;
+
+font-size:28px;
+
+}
+
+/* =========================
+   FLOAT ANIMATION
+========================= */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:992px){
+
+.hero{
+
+padding:70px 30px;
+
+}
+
+.hero-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:50px;
+
+}
+
+.hero-left{
+
+align-items:center;
+
+}
+
+.hero-left h1{
+
+font-size:48px;
+
+}
+
+.hero-left p{
+
+max-width:650px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-features{
+
+justify-content:center;
+
+}
+
+.hero-window{
+
+margin:auto;
+
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:576px){
+
+.hero{
+
+padding:50px 20px;
+
+}
+
+.hero-left h1{
+
+font-size:36px;
+
+}
+
+.hero-left p{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.btn-primary-custom,
+
+.btn-secondary-custom{
+
+width:100%;
+
+}
+
+.hero-features{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.hero-features div{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.hero-window{
+
+max-width:100%;
+
+}
+
+}
+
+.mock-toolbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.mock-toolbar button{
+
+border:none;
+
+background:#334155;
+
+color:white;
+
+padding:8px 12px;
+
+margin-left:8px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.mock-toolbar button:hover{
+
+background:#7F5AF0;
+
+}
+
+.mock-editor{
+
+background:#0F172A;
+
+border-radius:14px;
+
+padding:20px;
+
+font-family:Consolas, monospace;
+
+}
+
+.line{
+
+margin:16px 0;
+
+}
+
+.keyword{
+
+color:#A855F7;
+
+font-weight:bold;
+
+}
+
+.function{
+
+color:#38BDF8;
+
+}
+
+.email{
+
+color:#10B981;
+
+}
+
+.url{
+
+color:#F59E0B;
+
+}
+
+.cursor{
+
+height:22px;
+
+width:3px;
+
+background:white;
+
+animation:blink 1s infinite;
+
+margin-top:15px;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
+
+}
