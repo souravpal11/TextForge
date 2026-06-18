@@ -136,6 +136,7 @@ export default function Navbar(props) {
               <input
                 type="text"
                 placeholder="Search..."
+                
               />
 
             </div>

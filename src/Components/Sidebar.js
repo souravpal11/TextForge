@@ -8,8 +8,7 @@ import {
   FaBroom,
   FaEnvelope,
   FaClipboard,
-  FaChartBar,
-  FaHome
+  FaChartBar
 } from "react-icons/fa";
 
 export default function Sidebar(props) {
@@ -34,11 +33,6 @@ export default function Sidebar(props) {
       </button>
 
       {!collapsed && <h3>TextForge</h3>}
-
-      <button onClick={() => scroll("hero")}>
-        <FaHome />
-        {!collapsed && <span>Home</span>}
-      </button>
 
       <button onClick={() => scroll("editor")}>
         <FaKeyboard />
