@@ -160,7 +160,7 @@ export default function About(props) {
     background:
       props.mode === "dark"
         ? "rgba(255,255,255,0.08)"
-        : "#ffffff",
+        : "rgba(255,255,255,0.08)",
     color: props.mode === "dark" ? "#ffffff" : "#000000",
     backdropFilter: props.mode === "dark" ? "blur(12px)" : "none",
     border:
@@ -175,7 +175,7 @@ export default function About(props) {
       <div className="shadow-lg" style={cardStyle}>
         <div className="card-body p-5">
           <h1 className="text-center fw-bold mb-4">
-            About TextUtils
+            About TextForge
           </h1>
 
           <p className="lead text-center mb-5">
@@ -239,7 +239,7 @@ export default function About(props) {
                     : "#2563EB",
               }}
             >
-              Why Choose TextUtils?
+              Why Choose TextForge?
             </h3>
 
             <p className="mt-3">
