@@ -36,7 +36,7 @@ return(
 
 <button
 
-className={`z-1 top-btn ${show?"show":""}`}
+className={`z-10 top-btn ${show?"show":""}`}
 
 onClick={top}
 
